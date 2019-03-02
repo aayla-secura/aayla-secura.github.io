@@ -1,26 +1,3 @@
----
-layout: article
-titles:
-  en      : &EN       About
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
-key: page-about
----
-
-<pre style="line-height: 1">
-xxd -p -r &lt;&lt;&lt;"
-
   7e        7                        e         7e 
   7e7e       7e                    7e       7e7e  
    7e7e7e    7e7e                7e7e    7e7e7e   
@@ -51,5 +28,3 @@ xxd -p -r &lt;&lt;&lt;"
    55f536    9746                82f4    c65676   
    56e       64                    73       203c  
   3c        0                        d        0a  
-
-"</pre>

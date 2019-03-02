@@ -20,7 +20,7 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://aayla-secura.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : shellz on Coruscant
+title   : shellz on Korriban
 description: > # this means to ignore newlines until "Language & timezone"
   Random hacking stuff...
 
@@ -29,6 +29,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 ##############################
 lang: # the language of your site, default as "en"
 timezone: Pacific/Auckland # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+future:   true
 
 
 ## => Author and Social
@@ -39,7 +40,7 @@ author:
   url       : "aayla-secura.github.io"
   avatar    : # path or url of avatar image (square)
   bio       : I took the redpill. Pentested at aurainfosec.com
-  email     : aayla.secura.1138@gmail.com 
+  email     : 
   facebook  : hell no...
   twitter   : AaylaSecura1138
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
@@ -181,7 +182,7 @@ analytics:
 ##############################
 markdown    : kramdown
 highlighter : rouge
-permalink   : date
+permalink   : /:slug
 
 exclude:
   - CHANGELOG.md
@@ -200,6 +201,7 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - /tools
 
 defaults:
   - scope:

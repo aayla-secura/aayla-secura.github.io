@@ -1,0 +1,10 @@
+~~~~~~~~~~~~~~~~~~~~ shellz on Korriban ~~~~~~~~~~~~~~~~~~~~
+
+Blacklisting is a lie, there is only injection.
+Through injection, I gain shell.
+Through shell, I gain privesc.
+Through privesc, I gain persistence.
+Through persistence, my shellcode keeps running.
+The Network shall pivot me.
+
+>> https://starwars.fandom.com/wiki/Code_of_the_Sith/Legends <<

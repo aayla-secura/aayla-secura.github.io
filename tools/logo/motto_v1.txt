@@ -1,0 +1,7 @@
+Blacklisting is a lie, there is only injection.
+Through injection, I gain shell.
+Through shell, I gain privesc.
+Through privesc, I gain persistence.
+Through persistence, my shellcode keeps running.
+The Network shall pivot me.
+

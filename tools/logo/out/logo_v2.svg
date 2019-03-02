@@ -2,7 +2,6 @@
   <style>
     text {
       font: bold 16px monospace;
-      fill: #888;
     }
     tspan {
       fill: none;

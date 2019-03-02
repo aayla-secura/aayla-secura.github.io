@@ -1,0 +1,84 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font: bold 16px monospace;
+    }
+    tspan {
+      fill: none;
+      draw: none;
+    }
+  </style>
+  <text x="0" y="4%">
+  <tspan>00</tspan>4<tspan>0000000</tspan>2<tspan>000000000000000000</tspan>6<tspan>0000000</tspan>c6<tspan>0</tspan>
+  </text>
+  <text x="0" y="8%">
+  <tspan>00</tspan>1636<tspan>0000</tspan>b6c<tspan>00000000000000</tspan>697<tspan>0000</tspan>3746<tspan>00</tspan>
+  </text>
+  <text x="0" y="12%">
+  <tspan>000</tspan>96e672<tspan>00</tspan>0697<tspan>0000000000</tspan>32061<tspan>0</tspan>206c69<tspan>000</tspan>
+  </text>
+  <text x="0" y="16%">
+  <tspan>0000</tspan>652c207468657<tspan>000000</tspan>265206973206f<tspan>0000</tspan>
+  </text>
+  <text x="0" y="20%">
+  <tspan>00000</tspan>6e6c7920696e6a656374696f6e2e0d<tspan>00000</tspan>
+  </text>
+  <text x="0" y="24%">
+  <tspan>000000</tspan>0a5468726<tspan>0000000000</tspan>f75676820<tspan>000000</tspan>
+  </text>
+  <text x="0" y="28%">
+  <tspan>000</tspan>696e6a6563<tspan>00000000000000</tspan>74696f6e2c<tspan>000</tspan>
+  </text>
+  <text x="0" y="32%">
+  <tspan>0000</tspan>2049206<tspan>000000</tspan>761696<tspan>000000</tspan>e207368<tspan>0000</tspan>
+  </text>
+  <text x="0" y="36%">
+  <tspan>00000</tspan>656c6<tspan>00000</tspan>c2e0d0a546<tspan>00000</tspan>8726f<tspan>00000</tspan>
+  </text>
+  <text x="0" y="40%">
+  <tspan>000000</tspan>7567<tspan>000</tspan>68207368656c6c<tspan>0000</tspan>2c2<tspan>000000</tspan>
+  </text>
+  <text x="0" y="44%">
+  <tspan>0000000</tspan>04<tspan>0000</tspan>9206761696e207<tspan>0000</tspan>07<tspan>0000000</tspan>
+  </text>
+  <text x="0" y="48%">
+  <tspan>0000000</tspan>26<tspan>000</tspan>9766573632e0d0a5<tspan>000</tspan>46<tspan>0000000</tspan>
+  </text>
+  <text x="0" y="52%">
+  <tspan>0000000</tspan>87<tspan>000</tspan>26f7567682070726<tspan>000</tspan>97<tspan>0000000</tspan>
+  </text>
+  <text x="0" y="56%">
+  <tspan>0000000</tspan>66<tspan>0000</tspan>573632c2049206<tspan>0000</tspan>76<tspan>0000000</tspan>
+  </text>
+  <text x="0" y="60%">
+  <tspan>000000</tspan>1696<tspan>000</tspan>e2070657273697<tspan>0000</tspan>374<tspan>000000</tspan>
+  </text>
+  <text x="0" y="64%">
+  <tspan>00000</tspan>656e6<tspan>00000</tspan>3652e0d0a5<tspan>00000</tspan>46872<tspan>00000</tspan>
+  </text>
+  <text x="0" y="68%">
+  <tspan>0000</tspan>6f75676<tspan>000000</tspan>820706<tspan>000000</tspan>5727369<tspan>0000</tspan>
+  </text>
+  <text x="0" y="72%">
+  <tspan>000</tspan>7374656e63<tspan>00000000000000</tspan>652c206d79<tspan>000</tspan>
+  </text>
+  <text x="0" y="76%">
+  <tspan>000000</tspan>207368656<tspan>0000000000</tspan>c6c636f64<tspan>000000</tspan>
+  </text>
+  <text x="0" y="80%">
+  <tspan>00000</tspan>65206b656570732072756e6e696e67<tspan>00000</tspan>
+  </text>
+  <text x="0" y="84%">
+  <tspan>0000</tspan>2e0d0a5468652<tspan>000000</tspan>04e6574776f72<tspan>0000</tspan>
+  </text>
+  <text x="0" y="88%">
+  <tspan>000</tspan>6b2073<tspan>0</tspan>68616<tspan>0000000000</tspan>c6c20<tspan>0</tspan>706976<tspan>000</tspan>
+  </text>
+  <text x="0" y="92%">
+  <tspan>00</tspan>6f74<tspan>0000</tspan>206<tspan>00000000000000</tspan>d65<tspan>0000</tspan>2e0d<tspan>00</tspan>
+  </text>
+  <text x="0" y="96%">
+  <tspan>00</tspan>0a<tspan>000000</tspan>0<tspan>000000000000000000</tspan>d<tspan>0000000</tspan>0a<tspan>0</tspan>
+  </text>
+
+</svg>
