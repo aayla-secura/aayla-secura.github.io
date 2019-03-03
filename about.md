@@ -18,7 +18,7 @@ titles:
 key: page-about
 ---
 
-<pre style="line-height: 1">
+<pre style="line-height: 1; word-wrap: normal;">
 xxd -p -r &lt;&lt;&lt;"
 
   7e        7                        e         7e 
